@@ -1,6 +1,8 @@
 'use strict';
 
 const store = (function () {
+
+  const foo = 'bar';
   let items = [{
         id: cuid(),
         name: 'apples',
@@ -34,3 +36,17 @@ const store = (function () {
 
 
 }());
+
+
+function findById(id){
+  return store.items.find(); 
+}
+
+function addItem(name) {
+  try { 
+    if (Item.validateName === name) {
+        this.items.push(name); 
+    }
+
+    }
+  }

@@ -2,7 +2,7 @@
 
 function validateName(name) {
   if (!name) {
-    throw 'Name does not exist';
+    throw new Error('this is the error message');
   }
 }
 

@@ -61,8 +61,8 @@ const shoppingList = (function(){
      let newItem = Item.create(itemName); 
       store.items.push(newItem); 
   }
-  catch(err) {
-    console.log("Cannot add item: {error.message}");
+  catch(err) { 
+    console.log(`Cannot add item: ${err.message}`);
   }
   }
   

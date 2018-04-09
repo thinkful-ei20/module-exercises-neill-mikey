@@ -34,19 +34,19 @@ const store = (function () {
     searchTerm: searchTerm,
   }
 
+  function addItem(name) {
+    try {
+      Item.validateName(name);
+      this.items.push(Item.create(name));
+    } catch (err) {
+      console.log('Error in addItem function');
+      console.error(err);
+    }
+
+    function findById(id) {
+      return store.items.find(event => event );
+    }
+
+  }
 
 }());
-
-
-function findById(id){
-  return store.items.find(); 
-}
-
-function addItem(name) {
-  try { 
-    if (Item.validateName === name) {
-        this.items.push(name); 
-    }
-
-    }
-  }

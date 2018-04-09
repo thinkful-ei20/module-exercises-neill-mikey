@@ -1,12 +1,25 @@
 'use strict';
 
+function validateName(name) {
+  if (!name) {
+    throw 'Name does not exist';
+  }
+}
+
+function create(name) {
+  return {
+    id: cuid(),
+    name, 
+    checked: false, 
+  };
+}
+
 const Item = (function () {
-  const foo = 'bar';
 
   return {
-    name: 'Mike',
-    age: 89,
+    name: 'Neill',
+    validateName,
+    create, 
   };
 }() );
-
 

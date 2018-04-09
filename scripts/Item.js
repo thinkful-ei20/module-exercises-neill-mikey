@@ -1,16 +1,12 @@
 'use strict';
 
-const globalVar = globe; 
+const Item = (function () {
+  const foo = 'bar';
 
-const newIife = (function () {
-        return {
-            newObj = {};
-        }
+  return {
+    name: 'Mike',
+    age: 89,
+  };
+}() );
 
-    }
-
-
-);
-
-const foo = 'bar';
 
